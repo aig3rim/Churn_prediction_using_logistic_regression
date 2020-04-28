@@ -25,6 +25,6 @@ You need an installation of Python, plus the following libraries:
 
 ## Summary and key findings
 * This logistic regression model can predict churn with 0.82 accuracy, which can help to retain old users;
-* We got 869+917=1,786 correct predictions and 184+195=379 incorrect predictions of churn;
+* The model gives 1,786 correct and 379 incorrect predictions of churn;
 * In order to implement the model, Synthetic Minority Oversampling Technique (SMOT) and Recursive Feature Elimination (RFE) were applied to balance the data and select the important features; 
 * After apllying RFE, we chose parameters with p-value less than 0.05. Overall, the model was implemented using the following parameters: "gender_Female", "gender_Male", "SeniorCitizen_No", "SeniorCitizen_Yes", "Dependents_No","MultipleLines_No", "MultipleLines_Yes", "StreamingMovies_No internet service", "Contract_One year", "Contract_Two year", "PaperlessBilling_Yes", "PaymentMethod_Bank transfer (automatic)", "PaymentMethod_Credit card (automatic)", "PaymentMethod_Electronic check", "PaymentMethod_Mailed check".
